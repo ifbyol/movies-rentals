@@ -9,7 +9,7 @@ deploy:
     - okteto deploy -f mongodb-compose.yml
     - helm upgrade --install rentals chart --set image=${OKTETO_BUILD_RENTALS_IMAGE}
   divert:
-    namespace: ifbyol-staging
+    namespace: test-nacho-staging
 
 dev:
   rentals:
